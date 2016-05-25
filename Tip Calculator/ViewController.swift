@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var tipAmountCalculated : Float = 0.0
     var finalBillAmount : Float = 0.0
     let gold = UIColor(hexString: "#ffe700ff")
+    let buttonColor = UIColor(red:0.98, green:0.82, blue:0.03, alpha:1.0).CGColor as CGColorRef
+
     
     @IBOutlet weak var totalBill: UITextField!
     @IBOutlet weak var percentageForTip: UITextField!
@@ -29,16 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        calculateTip.layer.borderColor = UIColor.whiteColor().CGColor // Set border color
-        calculateTip.layer.borderWidth = 1 // Set border width
-        calculateTip.layer.cornerRadius = 10 // Set border radius (Make it curved, increase this for a more rounded button
-        calculateTip.layer.backgroundColor = UIColor(red:0.98, green:0.82, blue:0.03, alpha:1.0).CGColor as CGColorRef
-        
-        clearButton.layer.borderColor = UIColor.whiteColor().CGColor // Set border color
-        clearButton.layer.borderWidth = 1 // Set border width
-        clearButton.layer.cornerRadius = 10 // Set border radius (Make it curved, increase this for a more rounded button
-        clearButton.layer.backgroundColor = UIColor(red:0.98, green:0.82, blue:0.03, alpha:1.0).CGColor as CGColorRef
+        customButton()
     }
     
     
@@ -102,13 +95,35 @@ class ViewController: UIViewController, UITextFieldDelegate {
         percentageForTip.text = ""
         
         tipAmount.text = "Tip $0.00"
-        totalBillWithTip.text = "Total Bill w/Tip $0.00"
+        totalBillWithTip.text = "Total Bill $0.00"
         
         hideKeyboards()
     }
     
+    func customButton() {
+        
+        calculateTip.layer.borderColor = UIColor.whiteColor().CGColor // Set border color
+        calculateTip.layer.borderWidth = 1
+        calculateTip.layer.cornerRadius = 10
+        calculateTip.layer.backgroundColor = buttonColor
+        
+        clearButton.layer.borderColor = UIColor.whiteColor().CGColor
+        clearButton.layer.borderWidth = 1
+        clearButton.layer.cornerRadius = 10
+        clearButton.layer.backgroundColor = buttonColor
+        
+        tipAmount.layer.backgroundColor  = buttonColor
+        tipAmount.layer.borderWidth = 1
+        tipAmount.layer.cornerRadius = 10
+        
+        totalBillWithTip.layer.backgroundColor  = buttonColor
+        totalBillWithTip.layer.borderWidth = 1
+        totalBillWithTip.layer.cornerRadius = 10
+    }
+    
     
 }
+
 
 extension UIColor {
     public convenience init?(hexString: String) {

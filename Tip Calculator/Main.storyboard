@@ -23,7 +23,6 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3B-yl-tUX">
                                         <rect key="frame" x="58" y="348" width="259" height="50"/>
-                                        <color key="backgroundColor" red="0.99215686270000003" green="0.69411764710000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="lfE-ib-258"/>
                                         </constraints>
@@ -57,7 +56,6 @@
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bill $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plE-c7-3ea">
                                         <rect key="frame" x="58" y="406" width="259" height="50"/>
-                                        <color key="backgroundColor" red="0.99215686270000003" green="0.69411764710000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="qka-CC-jKM"/>
                                         </constraints>
@@ -144,9 +142,9 @@
                         <outlet property="calculateTip" destination="UFk-gV-F4n" id="9p6-RG-bpc"/>
                         <outlet property="clearButton" destination="b9J-nT-s4Q" id="ndC-9G-Gyp"/>
                         <outlet property="percentageForTip" destination="FWr-sg-zgt" id="T6h-5l-3n5"/>
-                        <outlet property="tipAmount" destination="y3B-yl-tUX" id="Oj9-sH-seX"/>
+                        <outlet property="tipAmount" destination="y3B-yl-tUX" id="qMI-H0-njX"/>
                         <outlet property="totalBill" destination="0z0-kI-8aF" id="ZWo-UH-Txu"/>
-                        <outlet property="totalBillWithTip" destination="plE-c7-3ea" id="JLu-74-bol"/>
+                        <outlet property="totalBillWithTip" destination="plE-c7-3ea" id="RdL-AA-buD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
