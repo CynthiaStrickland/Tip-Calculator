@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ww-Vl-kPM">
                                 <rect key="frame" x="0.0" y="44" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3B-yl-tUX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3B-yl-tUX">
                                         <rect key="frame" x="58" y="348" width="259" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="lfE-ib-258"/>
@@ -30,7 +30,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Bill" textAlignment="center" minimumFontSize="25" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="0z0-kI-8aF">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Bill" textAlignment="center" minimumFontSize="25" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="0z0-kI-8aF">
                                         <rect key="frame" x="58" y="150" width="259" height="50"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -39,13 +39,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-Rj-xKP">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TIP CALCULATOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-Rj-xKP">
                                         <rect key="frame" x="29" y="67" width="316" height="45"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
-                                        <color key="textColor" red="0.99215686270000003" green="0.69411764710000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
+                                        <color key="textColor" red="0.98039215690000003" green="0.81568627449999997" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tip %" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="FWr-sg-zgt">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tip %" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="FWr-sg-zgt">
                                         <rect key="frame" x="58" y="208" width="259" height="50"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -54,7 +54,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bill $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plE-c7-3ea">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Bill $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plE-c7-3ea">
                                         <rect key="frame" x="58" y="406" width="259" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="qka-CC-jKM"/>
@@ -63,9 +63,9 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFk-gV-F4n">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFk-gV-F4n">
                                         <rect key="frame" x="58" y="277" width="259" height="50"/>
-                                        <color key="backgroundColor" red="0.99215686270000003" green="0.69411764710000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.98039215686274506" green="0.81568627450980391" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="L1v-YI-cxo"/>
                                         </constraints>
@@ -82,9 +82,9 @@
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k67-Fs-ST1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9J-nT-s4Q">
-                                        <rect key="frame" x="58" y="477" width="259" height="50"/>
-                                        <color key="backgroundColor" red="0.99215686270000003" green="0.69411764710000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9J-nT-s4Q">
+                                        <rect key="frame" x="117" y="476" width="140" height="50"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.81568627449999997" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="VgX-qV-onJ"/>
                                         </constraints>
@@ -107,15 +107,15 @@
                                     <constraint firstItem="y3B-yl-tUX" firstAttribute="top" secondItem="UFk-gV-F4n" secondAttribute="bottom" constant="21" id="2XP-p7-yt0"/>
                                     <constraint firstItem="y3B-yl-tUX" firstAttribute="leading" secondItem="plE-c7-3ea" secondAttribute="leading" id="3a8-dM-4Yn"/>
                                     <constraint firstItem="0z0-kI-8aF" firstAttribute="leading" secondItem="6ww-Vl-kPM" secondAttribute="leading" constant="58" id="4TT-9w-dmc"/>
-                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="trailing" secondItem="plE-c7-3ea" secondAttribute="trailing" id="6bb-iC-2vz"/>
+                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="trailing" secondItem="plE-c7-3ea" secondAttribute="trailing" constant="-60" id="6bb-iC-2vz"/>
                                     <constraint firstItem="UFk-gV-F4n" firstAttribute="leading" secondItem="y3B-yl-tUX" secondAttribute="leading" id="BBH-mP-mdH"/>
                                     <constraint firstItem="f2U-Rj-xKP" firstAttribute="leading" secondItem="6ww-Vl-kPM" secondAttribute="leading" constant="29" id="JU0-OW-HmI"/>
                                     <constraint firstItem="0z0-kI-8aF" firstAttribute="trailing" secondItem="FWr-sg-zgt" secondAttribute="trailing" id="PeH-Fs-krV"/>
                                     <constraint firstItem="FWr-sg-zgt" firstAttribute="leading" secondItem="UFk-gV-F4n" secondAttribute="leading" id="bDf-Fc-e9M"/>
                                     <constraint firstItem="y3B-yl-tUX" firstAttribute="trailing" secondItem="plE-c7-3ea" secondAttribute="trailing" id="bIF-78-dC9"/>
-                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="top" secondItem="plE-c7-3ea" secondAttribute="bottom" constant="21" id="c5a-Un-bot"/>
+                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="top" secondItem="plE-c7-3ea" secondAttribute="bottom" constant="20" id="c5a-Un-bot"/>
                                     <constraint firstItem="f2U-Rj-xKP" firstAttribute="centerX" secondItem="6ww-Vl-kPM" secondAttribute="centerX" id="dcS-w1-WSo"/>
-                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="leading" secondItem="plE-c7-3ea" secondAttribute="leading" id="fkR-ut-bwy"/>
+                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="leading" secondItem="plE-c7-3ea" secondAttribute="leading" constant="59" id="fkR-ut-bwy"/>
                                     <constraint firstItem="plE-c7-3ea" firstAttribute="top" secondItem="y3B-yl-tUX" secondAttribute="bottom" constant="8" symbolic="YES" id="gKT-gL-B2S"/>
                                     <constraint firstItem="FWr-sg-zgt" firstAttribute="top" secondItem="0z0-kI-8aF" secondAttribute="bottom" constant="8" symbolic="YES" id="jXQ-dT-Edg"/>
                                     <constraint firstItem="UFk-gV-F4n" firstAttribute="top" secondItem="FWr-sg-zgt" secondAttribute="bottom" constant="19" id="kMH-7j-0RE"/>
