@@ -101,8 +101,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         totalBill.text = ""
         percentageForTip.text = ""
         
-        tipAmount.text = "Tip Amount $0.00"
-        totalBillWithTip.text = "Total Bill with Tip $0.00"
+        tipAmount.text = "Tip $0.00"
+        totalBillWithTip.text = "Total Bill w/Tip $0.00"
         
         hideKeyboards()
     }
