@@ -3,6 +3,12 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
+      "filename" : "Tip-Widget29.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
       "filename" : "Tip-Widget58.png",
       "scale" : "2x"
     },
@@ -20,19 +26,30 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "Tip-Widget120.png",
+      "filename" : "Tip-Widget120-1.png",
       "scale" : "3x"
     },
     {
-      "size" : "60x60",
+      "size" : "57x57",
       "idiom" : "iphone",
-      "filename" : "Tip-Widget60.png",
+      "filename" : "Tip-Widget58-1.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "57x57",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Tip-Widget120-1.png",
+      "filename" : "Tip-Widget120.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "Tip-Widget180.png",
       "scale" : "3x"
     }
   ],

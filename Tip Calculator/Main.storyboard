@@ -21,13 +21,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ww-Vl-kPM">
                                 <rect key="frame" x="0.0" y="44" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Amount $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3B-yl-tUX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3B-yl-tUX">
                                         <rect key="frame" x="89" y="348" width="196" height="50"/>
                                         <color key="backgroundColor" red="0.99215686270000003" green="0.69411764710000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="lfE-ib-258"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -52,7 +52,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ZnD-1E-9Eb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bill $0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plE-c7-3ea">
@@ -61,11 +61,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="qka-CC-jKM"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFk-gV-F4n" customClass="APRoundedButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFk-gV-F4n">
                                         <rect key="frame" x="89" y="266" width="196" height="50"/>
                                         <color key="backgroundColor" red="0.99215686270000003" green="0.69411764710000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -84,18 +84,40 @@
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k67-Fs-ST1"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9J-nT-s4Q">
+                                        <rect key="frame" x="89" y="464" width="196" height="50"/>
+                                        <color key="backgroundColor" red="0.99215686270000003" green="0.69411764710000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VgX-qV-onJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ClearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHs-Lh-kE3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstItem="y3B-yl-tUX" firstAttribute="top" secondItem="UFk-gV-F4n" secondAttribute="bottom" constant="32" id="2XP-p7-yt0"/>
                                     <constraint firstItem="y3B-yl-tUX" firstAttribute="leading" secondItem="plE-c7-3ea" secondAttribute="leading" id="3a8-dM-4Yn"/>
                                     <constraint firstItem="0z0-kI-8aF" firstAttribute="leading" secondItem="6ww-Vl-kPM" secondAttribute="leading" constant="89" id="4TT-9w-dmc"/>
+                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="trailing" secondItem="plE-c7-3ea" secondAttribute="trailing" id="6bb-iC-2vz"/>
                                     <constraint firstItem="UFk-gV-F4n" firstAttribute="leading" secondItem="y3B-yl-tUX" secondAttribute="leading" id="BBH-mP-mdH"/>
                                     <constraint firstItem="f2U-Rj-xKP" firstAttribute="leading" secondItem="6ww-Vl-kPM" secondAttribute="leading" constant="29" id="JU0-OW-HmI"/>
                                     <constraint firstItem="0z0-kI-8aF" firstAttribute="trailing" secondItem="FWr-sg-zgt" secondAttribute="trailing" id="PeH-Fs-krV"/>
                                     <constraint firstItem="FWr-sg-zgt" firstAttribute="leading" secondItem="UFk-gV-F4n" secondAttribute="leading" id="bDf-Fc-e9M"/>
                                     <constraint firstItem="y3B-yl-tUX" firstAttribute="trailing" secondItem="plE-c7-3ea" secondAttribute="trailing" id="bIF-78-dC9"/>
+                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="top" secondItem="plE-c7-3ea" secondAttribute="bottom" constant="8" symbolic="YES" id="c5a-Un-bot"/>
                                     <constraint firstItem="f2U-Rj-xKP" firstAttribute="centerX" secondItem="6ww-Vl-kPM" secondAttribute="centerX" id="dcS-w1-WSo"/>
+                                    <constraint firstItem="b9J-nT-s4Q" firstAttribute="leading" secondItem="plE-c7-3ea" secondAttribute="leading" id="fkR-ut-bwy"/>
                                     <constraint firstItem="plE-c7-3ea" firstAttribute="top" secondItem="y3B-yl-tUX" secondAttribute="bottom" constant="8" symbolic="YES" id="gKT-gL-B2S"/>
                                     <constraint firstItem="FWr-sg-zgt" firstAttribute="top" secondItem="0z0-kI-8aF" secondAttribute="bottom" constant="8" symbolic="YES" id="jXQ-dT-Edg"/>
                                     <constraint firstItem="UFk-gV-F4n" firstAttribute="top" secondItem="FWr-sg-zgt" secondAttribute="bottom" constant="8" symbolic="YES" id="kMH-7j-0RE"/>
@@ -127,6 +149,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="calculateTip" destination="UFk-gV-F4n" id="9p6-RG-bpc"/>
+                        <outlet property="clearButton" destination="b9J-nT-s4Q" id="ndC-9G-Gyp"/>
                         <outlet property="percentageForTip" destination="FWr-sg-zgt" id="T6h-5l-3n5"/>
                         <outlet property="tipAmount" destination="y3B-yl-tUX" id="Oj9-sH-seX"/>
                         <outlet property="totalBill" destination="0z0-kI-8aF" id="ZWo-UH-Txu"/>
