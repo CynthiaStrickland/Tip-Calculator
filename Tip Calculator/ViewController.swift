@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var finalBillAmount : Float = 0.0
     let gold = UIColor(hexString: "#ffe700ff")
     let buttonColor = UIColor(red:0.98, green:0.82, blue:0.03, alpha:1.0).CGColor as CGColorRef
+    let buttonBorder = UIColor.whiteColor().CGColor
 
     
     @IBOutlet weak var totalBill: UITextField!
@@ -102,20 +103,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func customButton() {
         
-        calculateTip.layer.borderColor = UIColor.whiteColor().CGColor // Set border color
+        calculateTip.layer.borderColor = buttonBorder // Set border color
         calculateTip.layer.borderWidth = 1
         calculateTip.layer.cornerRadius = 10
         calculateTip.layer.backgroundColor = buttonColor
         
-        clearButton.layer.borderColor = UIColor.whiteColor().CGColor
+        clearButton.layer.borderColor = buttonBorder
         clearButton.layer.borderWidth = 1
         clearButton.layer.cornerRadius = 10
         clearButton.layer.backgroundColor = buttonColor
         
+        tipAmount.layer.borderColor = buttonBorder
         tipAmount.layer.backgroundColor  = buttonColor
         tipAmount.layer.borderWidth = 1
         tipAmount.layer.cornerRadius = 10
         
+        totalBillWithTip.layer.borderColor = buttonBorder
         totalBillWithTip.layer.backgroundColor  = buttonColor
         totalBillWithTip.layer.borderWidth = 1
         totalBillWithTip.layer.cornerRadius = 10
