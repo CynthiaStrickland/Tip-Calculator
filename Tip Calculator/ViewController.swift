@@ -86,8 +86,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let formatTip = String(format: "%0.02f", tipAmountCalculated)
         let formatBill = String(format: "%0.02f", finalBillAmount)
         
-        tipAmount.text = "Tip Amount = $\(formatTip)"
-        totalBillWithTip.text = "Total Bill with Tip = $\(formatBill)"
+        tipAmount.text = "Tip = $\(formatTip)"
+        totalBillWithTip.text = "Total Bill= $\(formatBill)"
         
     }
     
