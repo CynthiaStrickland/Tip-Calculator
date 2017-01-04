@@ -16,8 +16,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var tipAmountCalculated : Float = 0.0
     var finalBillAmount : Float = 0.0
     let gold = UIColor(hexString: "#ffe700ff")
-    let buttonColor = UIColor(red:0.98, green:0.82, blue:0.03, alpha:1.0).CGColor as CGColorRef
-    let buttonBorder = UIColor.whiteColor().CGColor
+    let buttonColor = UIColor(red:0.98, green:0.82, blue:0.03, alpha:1.0).cgColor as CGColor
+    let buttonBorder = UIColor.white.cgColor
 
     
     @IBOutlet weak var totalBill: UITextField!
@@ -36,11 +36,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    @IBAction func buttonPressed(sender: UIButton) {
+    @IBAction func buttonPressed(_ sender: UIButton) {
         calculateTipAmount()
     }
     
-    @IBAction func ClearButtonPressed(sender: AnyObject) {
+    @IBAction func ClearButtonPressed(_ sender: AnyObject) {
         clearLabels()
         
     }
@@ -49,10 +49,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         if totalBill.text! == "" && percentageForTip.text! == "" {
             let alertView = UIAlertController(title: "Error",
-                                              message: "Please enter the bill and tip amounts" as String, preferredStyle:.Alert)
-            let okAction = UIAlertAction(title: "Thank you", style: .Default, handler: nil)
+                                              message: "Please enter the bill and tip amounts" as String, preferredStyle:.alert)
+            let okAction = UIAlertAction(title: "Thank you", style: .default, handler: nil)
             alertView.addAction(okAction)
-            self.presentViewController(alertView, animated: true, completion: nil)
+            self.present(alertView, animated: true, completion: nil)
             
         } else {
             
@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         hideKeyboards()
     }
     
@@ -133,14 +133,14 @@ extension UIColor {
         let r, g, b, a: CGFloat
         
         if hexString.hasPrefix("#") {
-            let start = hexString.startIndex.advancedBy(1)
-            let hexColor = hexString.substringFromIndex(start)
+            let start = hexString.characters.index(hexString.startIndex, offsetBy: 1)
+            let hexColor = hexString.substring(from: start)
             
             if hexColor.characters.count == 8 {
-                let scanner = NSScanner(string: hexColor)
+                let scanner = Scanner(string: hexColor)
                 var hexNumber: UInt64 = 0
                 
-                if scanner.scanHexLongLong(&hexNumber) {
+                if scanner.scanHexInt64(&hexNumber) {
                     r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
                     g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
                     b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255

@@ -14,6 +14,7 @@
 		3DEEBCF41CF648B4004C2C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEEBCF31CF648B4004C2C12 /* Main.storyboard */; };
 		3DEEBCF61CF648BE004C2C12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEEBCF51CF648BE004C2C12 /* ViewController.swift */; };
 		3DEEBCF81CF648CA004C2C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DEEBCF71CF648CA004C2C12 /* Assets.xcassets */; };
+		8170A1011E1C772400876F3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8170A1001E1C772400876F3C /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3DEEBCF31CF648B4004C2C12 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3DEEBCF51CF648BE004C2C12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DEEBCF71CF648CA004C2C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8170A1001E1C772400876F3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		3DEEBCB91CF64887004C2C12 = {
 			isa = PBXGroup;
 			children = (
+				8170A1001E1C772400876F3C /* Default-568h@2x.png */,
 				3DEEBCC41CF64887004C2C12 /* Tip Calculator */,
 				3DEEBCD91CF64887004C2C12 /* Tip CalculatorTests */,
 				3DEEBCE41CF64887004C2C12 /* Tip CalculatorUITests */,
@@ -188,11 +191,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Cynthia Whitlatch";
 				TargetAttributes = {
 					3DEEBCC11CF64887004C2C12 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LK662Y5U4K;
 					};
 					3DEEBCD51CF64887004C2C12 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -204,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3DEEBCBD1CF64887004C2C12 /* Build configuration list for PBXProject "Tip Calculator" */;
+			buildConfigurationList = 3DEEBCBD1CF64887004C2C12 /* Build configuration list for PBXProject "Tip-Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -230,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEEBCF41CF648B4004C2C12 /* Main.storyboard in Resources */,
+				8170A1011E1C772400876F3C /* Default-568h@2x.png in Resources */,
 				3DEEBCF81CF648CA004C2C12 /* Assets.xcassets in Resources */,
 				3DEEBCD01CF64887004C2C12 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -318,8 +323,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -363,8 +370,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -383,6 +392,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -391,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LK662Y5U4K;
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cynthia.whitlatch.Tip-Calculator";
@@ -402,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LK662Y5U4K;
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cynthia.whitlatch.Tip-Calculator";
@@ -458,7 +470,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3DEEBCBD1CF64887004C2C12 /* Build configuration list for PBXProject "Tip Calculator" */ = {
+		3DEEBCBD1CF64887004C2C12 /* Build configuration list for PBXProject "Tip-Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DEEBCE81CF64887004C2C12 /* Debug */,
@@ -474,6 +486,7 @@
 				3DEEBCEC1CF64887004C2C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DEEBCED1CF64887004C2C12 /* Build configuration list for PBXNativeTarget "Tip CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +495,7 @@
 				3DEEBCEF1CF64887004C2C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DEEBCF01CF64887004C2C12 /* Build configuration list for PBXNativeTarget "Tip CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +504,7 @@
 				3DEEBCF21CF64887004C2C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
